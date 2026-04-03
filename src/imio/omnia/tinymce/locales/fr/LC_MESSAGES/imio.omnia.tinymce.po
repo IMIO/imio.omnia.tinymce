@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: imio.omnia.tinymce\n"
+"POT-Creation-Date: 2026-03-23 00:00+0000\n"
+"PO-Revision-Date: 2026-03-23 00:00+0000\n"
+"Last-Translator: Antoine Duchêne <antoine.duchene@imio.be>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: imio.omnia.tinymce\n"
+
+#: ../browser/controlpanel.py:67
+msgid "Default translation language"
+msgstr "Langue de traduction par défaut"
+
+#: ../browser/controlpanel.py:74
+msgid "Display mode: inline near selection or centred with blur overlay."
+msgstr "Mode d'affichage : en ligne près de la sélection ou centré avec un flou en arrière-plan."
+
+#: ../browser/controlpanel.py:44
+msgid "Enable keyboard shortcuts"
+msgstr "Activer les raccourcis clavier"
+
+#: ../browser/controlpanel.py:16
+msgid "Enabled features"
+msgstr "Fonctionnalités activées"
+
+#: ../browser/controlpanel.py:73
+msgid "Floating panel mode"
+msgstr "Mode du panneau flottant"
+
+#: ../browser/controlpanel.py:81
+msgid "Floating panel width"
+msgstr "Largeur du panneau flottant"
+
+#: ../configure.zcml:25
+msgid "Installs the imio.omnia.tinymce add-on."
+msgstr "Installe le module imio.omnia.tinymce."
+
+#: ../browser/controlpanel.py:51
+msgid "Language codes available for translation."
+msgstr "Codes de langues disponibles pour la traduction."
+
+#: ../browser/controlpanel.py:17
+msgid "Restrict to a subset of features. Leave empty for all features except generate."
+msgstr "Restreindre à un sous-ensemble de fonctionnalités. Laisser vide pour toutes les fonctionnalités sauf la génération."
+
+#: ../browser/controlpanel.py:39
+msgid "Show context menu"
+msgstr "Afficher le menu contextuel"
+
+#: ../browser/controlpanel.py:34
+msgid "Show toolbar button"
+msgstr "Afficher le bouton dans la barre d'outils"
+
+#: ../browser/controlpanel.py:89
+msgid "TinyMCE Omnia settings"
+msgstr "Paramètres Omnia pour TinyMCE"
+
+#: ../browser/controlpanel.py:50
+msgid "Translation languages"
+msgstr "Langues de traduction"
+
+#: ../configure.zcml:34
+msgid "Uninstalls the imio.omnia.tinymce add-on."
+msgstr "Désinstalle le module imio.omnia.tinymce."
+
+#: ../browser/controlpanel.py:82
+msgid "Width in pixels (e.g. 500) or 'full' for full viewport width."
+msgstr "Largeur en pixels (ex. 500) ou « full » pour la pleine largeur de la fenêtre."
+
+#: ../configure.zcml:23
+msgid "imio.omnia.tinymce"
+msgstr ""
+
+#: ../configure.zcml:32
+msgid "imio.omnia.tinymce (uninstall)"
+msgstr "imio.omnia.tinymce (désinstallation)"

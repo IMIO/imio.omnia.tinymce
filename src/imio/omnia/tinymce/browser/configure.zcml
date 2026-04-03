@@ -1,0 +1,40 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  i18n_domain="imio.omnia.tinymce">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml"/>
+  <browser:jbot
+    directory="overrides"
+    layer="imio.omnia.tinymce.interfaces.IImioOmniaTinyMCELayer"
+  />
+
+  <!-- Publish static files -->
+  <plone:static
+    name="imio.omnia.tinymce"
+    type="plone"
+    directory="static"
+  />
+
+  <browser:page
+    name="omnia-tinymce-settings"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.OmniaTinyMCEControlPanelView"
+    permission="cmf.ManagePortal"
+    layer="imio.omnia.tinymce.interfaces.IImioOmniaTinyMCELayer"
+  />
+
+  <!-- Viewlet: inject omnia_* config into TinyMCE init -->
+  <browser:viewlet
+    name="omnia-tinymce-config"
+    for="*"
+    manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+    class=".viewlets.OmniaConfigViewlet"
+    template="templates/omnia_config.pt"
+    permission="zope2.View"
+    layer="imio.omnia.tinymce.interfaces.IImioOmniaTinyMCELayer"
+  />
+
+</configure>

@@ -1,0 +1,6 @@
+[report]
+include =
+    src/imio/omnia/tinymce/*
+omit =
+    */test*
+    */upgrades/*

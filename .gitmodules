@@ -1,0 +1,4 @@
+[submodule "src/imio/omnia/tinymce/browser/resources"]
+	path = src/imio/omnia/tinymce/browser/resources
+	url = git@gitlab.imio.be:ia/omnia-tinymce.git
+	branch = master

@@ -1,0 +1,10 @@
+<script tal:define="config view/config_json"
+        tal:condition="config"
+        tal:attributes="data-omnia-tinymce-config config"
+        type="text/javascript">
+(function() {
+  window.omnia_tinymce_settings = JSON.parse(
+    document.currentScript.getAttribute('data-omnia-tinymce-config')
+  );
+})();
+</script>

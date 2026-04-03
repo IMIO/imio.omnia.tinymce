@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: imio.omnia.tinymce\n"
+"POT-Creation-Date: 2026-03-23 00:00+0000\n"
+"PO-Revision-Date: 2026-03-23 00:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: English <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: imio.omnia.tinymce\n"
+
+#: ../browser/controlpanel.py:67
+msgid "Default translation language"
+msgstr ""
+
+#: ../browser/controlpanel.py:74
+msgid "Display mode: inline near selection or centred with blur overlay."
+msgstr ""
+
+#: ../browser/controlpanel.py:44
+msgid "Enable keyboard shortcuts"
+msgstr ""
+
+#: ../browser/controlpanel.py:16
+msgid "Enabled features"
+msgstr ""
+
+#: ../browser/controlpanel.py:73
+msgid "Floating panel mode"
+msgstr ""
+
+#: ../browser/controlpanel.py:81
+msgid "Floating panel width"
+msgstr ""
+
+#: ../configure.zcml:25
+msgid "Installs the imio.omnia.tinymce add-on."
+msgstr ""
+
+#: ../browser/controlpanel.py:51
+msgid "Language codes available for translation."
+msgstr ""
+
+#: ../browser/controlpanel.py:17
+msgid "Restrict to a subset of features. Leave empty for all features except generate."
+msgstr ""
+
+#: ../browser/controlpanel.py:39
+msgid "Show context menu"
+msgstr ""
+
+#: ../browser/controlpanel.py:34
+msgid "Show toolbar button"
+msgstr ""
+
+#: ../browser/controlpanel.py:89
+msgid "TinyMCE Omnia settings"
+msgstr ""
+
+#: ../browser/controlpanel.py:50
+msgid "Translation languages"
+msgstr ""
+
+#: ../configure.zcml:34
+msgid "Uninstalls the imio.omnia.tinymce add-on."
+msgstr ""
+
+#: ../browser/controlpanel.py:82
+msgid "Width in pixels (e.g. 500) or 'full' for full viewport width."
+msgstr ""
+
+#: ../configure.zcml:23
+msgid "imio.omnia.tinymce"
+msgstr ""
+
+#: ../configure.zcml:32
+msgid "imio.omnia.tinymce (uninstall)"
+msgstr ""

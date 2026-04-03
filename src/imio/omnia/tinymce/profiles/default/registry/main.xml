@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="imio.omnia.tinymce">
+
+  <records interface="imio.omnia.tinymce.browser.controlpanel.IOmniaTinyMCESettings"/>
+
+  <!-- Enable the Omnia API proxy provided by imio.omnia.core -->
+  <record name="imio.omnia.IOmniaCoreSettings.enable_proxy">
+    <value>True</value>
+  </record>
+
+  <!-- Register omnia as a TinyMCE external plugin via plone.custom_plugins -->
+  <record name="plone.custom_plugins">
+    <value purge="false">
+      <element>omnia|++plone++imio.omnia.tinymce/omnia-tinymce.js</element>
+    </value>
+  </record>
+
+  <!-- Add "omnia" to the TinyMCE toolbar -->
+  <record name="plone.custom_buttons">
+    <value purge="false">
+      <element>omnia</element>
+    </value>
+  </record>
+
+  <!-- Bundle to load the CSS globally (JS is loaded by TinyMCE via plone.custom_plugins) -->
+  <records prefix="plone.bundles/omnia-tinymce"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry">
+    <value key="jscompilation">++plone++imio.omnia.tinymce/omnia-tinymce.js</value>
+    <value key="csscompilation">++plone++imio.omnia.tinymce/omnia-tinymce.css</value>
+    <value key="enabled">True</value>
+    <value key="compile">False</value>
+  </records>
+
+</registry>
