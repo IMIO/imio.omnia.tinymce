@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a4 (unreleased)
+1.0a4 (2026-04-03)
 ------------------
 
 - Update the JS bundle.
