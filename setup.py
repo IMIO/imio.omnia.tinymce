@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='imio.omnia.tinymce',
-    version='1.0a3',
+    version='1.0a4.dev0',
     description="TinyMCE plugin integrating iMio's Omnia AI API for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
