@@ -5,7 +5,8 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Re-release because ZCML files were lacking.
+  [aduchene]
 
 
 1.0a1 (2026-04-03)
