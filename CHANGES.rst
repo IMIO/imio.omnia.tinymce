@@ -3,7 +3,34 @@ Changelog
 
 
 1.0a1 (unreleased)
-------------------
+-------------------
 
 - Initial release.
+  [duchenean]
+- Added TinyMCE AI plugin with 7 text actions: generate, expand, improve,
+  reduce, correct, translate, and make accessible.
+  [duchenean]
+- Added toolbar button, context menu entry, and keyboard shortcuts for
+  triggering AI actions on selected text.
+  [duchenean]
+- Added floating panel with two display modes: ``inline`` (near selection)
+  and ``blur`` (centred with overlay), with configurable width.
+  [duchenean]
+- Added translation support with 6 languages (fr, nl, de, en, es, it) and
+  configurable default target language.
+  [duchenean]
+- Added control panel tab (``@@omnia-tinymce-settings``) in the shared
+  Omnia settings UI: per-feature enable/disable, toolbar/context menu/shortcut
+  toggles, translation languages, and panel display settings.
+  [duchenean]
+- Added viewlet config bridge injecting Omnia settings into TinyMCE init
+  via monkey-patched ``tinymce.init``.
+  [duchenean]
+- Added TinyMCE plugin registration via ``plone.custom_plugins`` and CSS
+  bundle via ``plone.bundles/omnia-tinymce`` with Tailwind CSS scoped to
+  ``[data-omnia]``.
+  [duchenean]
+- Added clean uninstall removing plugin registrations and CSS bundle.
+  [duchenean]
+- Added i18n support (en, fr).
   [duchenean]
