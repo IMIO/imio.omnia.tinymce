@@ -79,18 +79,19 @@ Registry settings
 
 Stored under the prefix ``imio.omnia.tinymce.browser.controlpanel.IOmniaTinyMCESettings``:
 
-============================  =====================================================
-Field                         Purpose
-============================  =====================================================
-``enabled_features``          Tuple of active actions (default: all except *generate*)
-``show_toolbar``              Display the Omnia toolbar button (default: ``True``)
-``show_context_menu``         Display entries in the context menu (default: ``True``)
-``enable_shortcuts``          Enable keyboard shortcuts (default: ``True``)
-``translate_languages``       Available translation language codes (default: fr, nl, de, en; all options: fr, nl, de, en, es, it)
-``default_translate_language`` Default target language (default: ``fr``)
-``floating_panel_mode``       ``inline`` (near selection) or ``blur`` (centred overlay)
-``floating_panel_width``      Width in pixels (e.g. ``500``) or ``full``
-============================  =====================================================
+==============================  =====================================================================================
+Field                           Purpose
+==============================  =====================================================================================
+``enabled_features``            Tuple of active actions (default: all except *generate*)
+``show_toolbar``                Display the Omnia toolbar button (default: ``True``)
+``show_context_menu``           Display entries in the context menu (default: ``True``)
+``enable_shortcuts``            Enable keyboard shortcuts (default: ``True``)
+``translate_languages``         Available translation language codes (default: fr, nl, de, en; all options: fr, nl,
+                                de, en, es, it)
+``default_translate_language``  Default target language (default: ``fr``)
+``floating_panel_mode``         ``inline`` (near selection) or ``blur`` (centred overlay)
+``floating_panel_width``        Width in pixels (e.g. ``500``) or ``full``
+==============================  =====================================================================================
 
 
 How it works
