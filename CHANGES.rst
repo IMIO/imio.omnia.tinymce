@@ -5,7 +5,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update the JS bundle.
+  [aduchene]
 
 
 1.0a3 (2026-04-03)
