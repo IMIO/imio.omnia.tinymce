@@ -1,4 +1,4 @@
-graft src/imio.omnia
+graft src/imio
 graft docs
 include *.rst
 exclude tox.ini
