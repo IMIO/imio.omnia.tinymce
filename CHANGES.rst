@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Build the JS bundle from the published `@imiobe/omnia-tinymce` npm package (pinned to 0.3.0) instead of the git submodule sources.
+  [thomlamb]
 
 
 1.0a4 (2026-04-03)

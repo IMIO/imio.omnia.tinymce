@@ -14,9 +14,10 @@ src/imio/omnia/tinymce/
 │   │   └── omnia_config.pt     # <script> injecting omnia_* options into TinyMCE init
 │   ├── configure.zcml          # Browser views, static resources, viewlet, jbot overrides
 │   ├── overrides/              # z3c.jbot template overrides
-│   ├── resources/              # Git submodule → ia/omnia-tinymce (JS source)
+│   ├── resources/              # Git submodule → ia/omnia-tinymce (JS source, dev/testing only, not used to build static/)
+│   ├── npm/                    # Pins the published @imiobe/omnia-tinymce npm version (package.json + lockfile)
 │   └── static/                 # Built JS/CSS artifacts served via ++plone++imio.omnia.tinymce
-│       ├── omnia-tinymce.js    # ESM TinyMCE plugin (built from resources/)
+│       ├── omnia-tinymce.js    # ESM TinyMCE plugin (copied from the pinned npm package's dist/)
 │       └── omnia-tinymce.css   # Tailwind CSS styles (scoped to [data-omnia])
 ├── profiles/
 │   ├── default/                # GenericSetup install profile
@@ -40,23 +41,18 @@ src/imio/omnia/tinymce/
 
 ## Frontend (JS/CSS)
 
-The TinyMCE plugin source lives at `browser/resources/` as a **git submodule** pointing to `gitlab.imio.be:ia/omnia-tinymce`. Built artifacts are committed to `browser/static/`.
+The TinyMCE plugin is published as the npm package `@imiobe/omnia-tinymce`. `browser/npm/package.json` pins the version consumed by this add-on; built artifacts (`dist/omnia-tinymce.umd.cjs` and `dist/omnia-tinymce.css`) are copied from that package into `browser/static/`, which is committed to the repo.
 
-### Rebuilding after JS changes
+The source also lives at `browser/resources/` as a **git submodule** pointing to `gitlab.imio.be:ia/omnia-tinymce`, but it is only for local development/testing of JS changes before they're published to npm — it is **not** used to produce the shipped artifacts.
+
+### Updating the JS bundle
 
 ```bash
-make build-js                   # npm ci + vite build + copy to static/
+make update-js                  # npm install (in browser/npm/) + copy dist/ to static/
 make clean-js                   # Remove built artifacts from static/
 ```
 
-Or manually:
-
-```bash
-cd src/imio/omnia/tinymce/browser/resources
-npm ci && npm run build
-cp dist/omnia-tinymce.js ../static/
-cp dist/omnia-tinymce.css ../static/
-```
+To bump to a newer published version: edit the version in `src/imio/omnia/tinymce/browser/npm/package.json`, run `make update-js`, then commit `package.json`, `package-lock.json`, and the regenerated `static/omnia-tinymce.js` / `static/omnia-tinymce.css`.
 
 ### How the plugin is loaded
 

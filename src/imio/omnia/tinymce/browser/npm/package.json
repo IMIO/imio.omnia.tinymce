@@ -1,0 +1,8 @@
+{
+  "name": "imio-omnia-tinymce-vendor",
+  "private": true,
+  "description": "Pins the published @imiobe/omnia-tinymce npm package used to build static/omnia-tinymce.js and .css",
+  "dependencies": {
+    "@imiobe/omnia-tinymce": "0.3.0"
+  }
+}
