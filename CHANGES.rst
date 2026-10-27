@@ -5,7 +5,14 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- OIA-30: Replace the ``make-accessible`` feature with ``structure-text``
+  (« Structurer pour l'accessibilité ») and ``simplify-text``
+  (« Faciliter la lecture »). An upgrade step replaces ``make-accessible``
+  in the enabled features of existing sites.
+  [thomlamb]
+
+- Bump the bundled ``@imiobe/omnia-tinymce`` npm package to 0.4.0.
+  [thomlamb]
 
 
 1.0 (2026-08-03)

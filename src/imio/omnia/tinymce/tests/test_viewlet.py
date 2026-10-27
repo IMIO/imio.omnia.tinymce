@@ -43,7 +43,8 @@ class TestOmniaConfigViewlet(unittest.TestCase):
                 "improve-text",
                 "reduce-text",
                 "correct-text",
-                "make-accessible",
+                "structure-text",
+                "simplify-text",
                 "translate-text",
             ],
         )

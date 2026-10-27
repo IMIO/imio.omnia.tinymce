@@ -1,0 +1,15 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="imio.omnia.tinymce">
+
+  <genericsetup:upgradeStep
+    title="Replace make-accessible with structure-text and simplify-text"
+    description="The make-accessible feature was removed from the TinyMCE plugin: replace it in the enabled features by its two successors."
+    source="1001"
+    destination="1002"
+    handler=".upgrades.upgrade_1001_to_1002"
+    profile="imio.omnia.tinymce:default"
+  />
+
+</configure>

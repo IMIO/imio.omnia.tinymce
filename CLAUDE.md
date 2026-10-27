@@ -116,7 +116,7 @@ tox -e isort-apply              # Fix import order
 
 Stored under `imio.omnia.tinymce.browser.controlpanel.IOmniaTinyMCESettings`:
 
-- `enabled_features` — Tuple of active AI features: `generate`, `expand-text`, `improve-text`, `reduce-text`, `correct-text`, `make-accessible`, `translate-text`
+- `enabled_features` — Tuple of active AI features: `generate`, `expand-text`, `improve-text`, `reduce-text`, `correct-text`, `structure-text`, `simplify-text`, `translate-text`
 - `show_toolbar` — Show TinyMCE toolbar button (default: True)
 - `show_context_menu` — Show context menu entry (default: True)
 - `enable_shortcuts` — Enable keyboard shortcuts (default: True)
