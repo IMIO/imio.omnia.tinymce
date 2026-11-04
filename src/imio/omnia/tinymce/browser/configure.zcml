@@ -33,7 +33,7 @@
     manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
     class=".viewlets.OmniaConfigViewlet"
     template="templates/omnia_config.pt"
-    permission="zope2.View"
+    permission="imio.omnia.core.AccessOmniaAPIProxy"
     layer="imio.omnia.tinymce.interfaces.IImioOmniaTinyMCELayer"
   />
 
