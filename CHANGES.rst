@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1 (unreleased)
+1.1 (2026-11-16)
 ----------------
 
 - DELIBE-344: Render the ``omnia-tinymce-config`` viewlet only for users who can use
