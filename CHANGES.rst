@@ -5,7 +5,9 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- DELIBE-344: Render the ``omnia-tinymce-config`` viewlet only for users who can use
+  the ``@@omnia-api`` proxy. Anonymous pages no longer show the proxy URL and a CSRF token.
+  [aduchene]
 
 
 1.0 (2026-08-03)
