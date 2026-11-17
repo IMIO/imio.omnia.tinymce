@@ -5,7 +5,8 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Format the code with black.
+  [boulch]
 
 
 1.0 (2026-08-03)

@@ -20,7 +20,7 @@ class ImioOmniaTinyMCELayer(PloneSandboxLayer):
         self.loadZCML(package=imio.omnia.tinymce)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'imio.omnia.tinymce:default')
+        applyProfile(portal, "imio.omnia.tinymce:default")
 
 
 IMIO_OMNIA_TINYMCE_FIXTURE = ImioOmniaTinyMCELayer()
@@ -28,13 +28,13 @@ IMIO_OMNIA_TINYMCE_FIXTURE = ImioOmniaTinyMCELayer()
 
 IMIO_OMNIA_TINYMCE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(IMIO_OMNIA_TINYMCE_FIXTURE,),
-    name='ImioOmniaTinyMCELayer:IntegrationTesting',
+    name="ImioOmniaTinyMCELayer:IntegrationTesting",
 )
 
 
 IMIO_OMNIA_TINYMCE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(IMIO_OMNIA_TINYMCE_FIXTURE,),
-    name='ImioOmniaTinyMCELayer:FunctionalTesting',
+    name="ImioOmniaTinyMCELayer:FunctionalTesting",
 )
 
 
@@ -44,5 +44,5 @@ IMIO_OMNIA_TINYMCE_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='ImioOmniaTinyMCELayer:AcceptanceTesting',
+    name="ImioOmniaTinyMCELayer:AcceptanceTesting",
 )

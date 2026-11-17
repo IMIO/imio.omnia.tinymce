@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-from collective.z3cform.datagridfield.blockdatagridfield import BlockDataGridFieldFactory
+from collective.z3cform.datagridfield.blockdatagridfield import (
+    BlockDataGridFieldFactory,
+)
 from imio.omnia.core.browser.controlpanel import OmniaCoreControlPanelFormWrapper
 from imio.omnia.tinymce import _
 from plone.app.registry.browser.controlpanel import RegistryEditForm
@@ -14,7 +16,9 @@ class IOmniaTinyMCESettings(Interface):
 
     enabled_features = schema.Tuple(
         title=_("Enabled features"),
-        description=_("Restrict to a subset of features. Leave empty for all features except generate."),
+        description=_(
+            "Restrict to a subset of features. Leave empty for all features except generate."
+        ),
         value_type=schema.Choice(
             values=[
                 "generate",
@@ -28,7 +32,14 @@ class IOmniaTinyMCESettings(Interface):
         ),
         required=False,
         missing_value=(),
-        default=("expand-text", "improve-text", "reduce-text", "correct-text", "make-accessible", "translate-text"),
+        default=(
+            "expand-text",
+            "improve-text",
+            "reduce-text",
+            "correct-text",
+            "make-accessible",
+            "translate-text",
+        ),
     )
     show_toolbar = schema.Bool(
         title=_("Show toolbar button"),
@@ -50,14 +61,7 @@ class IOmniaTinyMCESettings(Interface):
         title=_("Translation languages"),
         description=_("Language codes available for translation."),
         value_type=schema.Choice(
-            values=[
-                "fr",
-                "nl",
-                "de",
-                "en",
-                "es",
-                "it"
-            ],
+            values=["fr", "nl", "de", "en", "es", "it"],
         ),
         required=False,
         missing_value=(),
@@ -71,7 +75,9 @@ class IOmniaTinyMCESettings(Interface):
 
     floating_panel_mode = schema.Choice(
         title=_("Floating panel mode"),
-        description=_("Display mode: inline near selection or centred with blur overlay."),
+        description=_(
+            "Display mode: inline near selection or centred with blur overlay."
+        ),
         values=["inline", "blur"],
         required=False,
         default="inline",
@@ -90,4 +96,6 @@ class OmniaTinyMCEControlPanelForm(RegistryEditForm):
     schema = IOmniaTinyMCESettings
 
 
-OmniaTinyMCEControlPanelView = layout.wrap_form(OmniaTinyMCEControlPanelForm, OmniaCoreControlPanelFormWrapper)
+OmniaTinyMCEControlPanelView = layout.wrap_form(
+    OmniaTinyMCEControlPanelForm, OmniaCoreControlPanelFormWrapper
+)
