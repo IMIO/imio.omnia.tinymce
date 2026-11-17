@@ -14,6 +14,18 @@ Changelog
 - Bump the bundled ``@imiobe/omnia-tinymce`` npm package to 0.4.1.
   [thomlamb]
 
+- Use native namespace packages (PEP 420). Remove the ``pkg_resources``
+  namespace declarations. Use ``importlib.resources`` in ``update_locale``.
+  Add the Plone 6.2 classifier.
+  [boulch]
+
+- Add ``test_plone62.cfg``, ``requirements-6.2.txt`` and a GitHub Actions
+  workflow that runs the tests on Plone 6.2.
+  [boulch]
+
+- Format the code with black.
+  [boulch]
+
 
 1.1 (2026-11-16)
 ----------------
@@ -21,13 +33,6 @@ Changelog
 - DELIBE-344: Render the ``omnia-tinymce-config`` viewlet only for users who can use
   the ``@@omnia-api`` proxy. Anonymous pages no longer show the proxy URL and a CSRF token.
   [aduchene]
-- Use native namespace packages (PEP 420). Remove the ``pkg_resources``
-  namespace declarations. Use ``importlib.resources`` in ``update_locale``.
-  Add the Plone 6.2 classifier.
-  [boulch]
-
-- Format the code with black.
-  [boulch]
 
 
 1.0 (2026-08-03)
