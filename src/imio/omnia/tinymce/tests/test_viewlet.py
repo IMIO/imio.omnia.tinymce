@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Tests for TinyMCE config viewlet generation."""
+
 import json
 import unittest
 from unittest.mock import patch
@@ -51,9 +52,7 @@ class TestOmniaConfigViewlet(unittest.TestCase):
         self.assertTrue(config["omnia_toolbar"])
         self.assertTrue(config["omnia_context_menu"])
         self.assertTrue(config["omnia_shortcuts"])
-        self.assertEqual(
-            config["omnia_translate_languages"], ["fr", "nl", "de", "en"]
-        )
+        self.assertEqual(config["omnia_translate_languages"], ["fr", "nl", "de", "en"])
         self.assertEqual(config["omnia_default_translate_language"], "fr")
         self.assertEqual(config["omnia_floating_panel_mode"], "inline")
         self.assertEqual(config["omnia_floating_panel_width"], 500)
@@ -74,9 +73,7 @@ class TestOmniaConfigViewlet(unittest.TestCase):
             f"{self.PREFIX}.default_translate_language", "es"
         )
         api.portal.set_registry_record(f"{self.PREFIX}.floating_panel_mode", "blur")
-        api.portal.set_registry_record(
-            f"{self.PREFIX}.floating_panel_width", "full"
-        )
+        api.portal.set_registry_record(f"{self.PREFIX}.floating_panel_width", "full")
 
         config = self._make_viewlet().get_config()
 

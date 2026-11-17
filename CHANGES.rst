@@ -21,6 +21,8 @@ Changelog
 - DELIBE-344: Render the ``omnia-tinymce-config`` viewlet only for users who can use
   the ``@@omnia-api`` proxy. Anonymous pages no longer show the proxy URL and a CSRF token.
   [aduchene]
+- Format the code with black.
+  [boulch]
 
 
 1.0 (2026-08-03)
