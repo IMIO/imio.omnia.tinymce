@@ -10,6 +10,10 @@ Changelog
   Add the Plone 6.2 classifier.
   [boulch]
 
+- Add ``test_plone62.cfg``, ``requirements-6.2.txt`` and a GitHub Actions
+  workflow that runs the tests on Plone 6.2.
+  [boulch]
+
 - Format the code with black.
   [boulch]
 
