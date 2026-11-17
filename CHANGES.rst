@@ -21,6 +21,11 @@ Changelog
 - DELIBE-344: Render the ``omnia-tinymce-config`` viewlet only for users who can use
   the ``@@omnia-api`` proxy. Anonymous pages no longer show the proxy URL and a CSRF token.
   [aduchene]
+- Use native namespace packages (PEP 420). Remove the ``pkg_resources``
+  namespace declarations. Use ``importlib.resources`` in ``update_locale``.
+  Add the Plone 6.2 classifier.
+  [boulch]
+
 - Format the code with black.
   [boulch]
 
