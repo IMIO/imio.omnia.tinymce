@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1 (unreleased)
+1.2 (unreleased)
 ----------------
 
 - Use native namespace packages (PEP 420). Remove the ``pkg_resources``
@@ -16,6 +16,14 @@ Changelog
 
 - Format the code with black.
   [boulch]
+
+
+1.1 (2026-11-16)
+----------------
+
+- DELIBE-344: Render the ``omnia-tinymce-config`` viewlet only for users who can use
+  the ``@@omnia-api`` proxy. Anonymous pages no longer show the proxy URL and a CSRF token.
+  [aduchene]
 
 
 1.0 (2026-08-03)
