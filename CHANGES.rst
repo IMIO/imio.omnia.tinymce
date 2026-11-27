@@ -14,6 +14,11 @@ Changelog
 - Bump the bundled ``@imiobe/omnia-tinymce`` npm package to 0.4.1.
   [thomlamb]
 
+- Remove the unused ``browser/resources`` git submodule (``ia/omnia-tinymce``).
+  The JS bundle comes from the npm package since 1.0, and the submodule's
+  private SSH URL broke ``git submodule update`` in buildouts and CI.
+  [thomlamb]
+
 - Use native namespace packages (PEP 420). Remove the ``pkg_resources``
   namespace declarations. Use ``importlib.resources`` in ``update_locale``.
   Add the Plone 6.2 classifier.

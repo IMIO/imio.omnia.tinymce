@@ -14,7 +14,6 @@ src/imio/omnia/tinymce/
 │   │   └── omnia_config.pt     # <script> injecting omnia_* options into TinyMCE init
 │   ├── configure.zcml          # Browser views, static resources, viewlet, jbot overrides
 │   ├── overrides/              # z3c.jbot template overrides
-│   ├── resources/              # Git submodule → ia/omnia-tinymce (JS source, dev/testing only, not used to build static/)
 │   ├── npm/                    # Pins the published @imiobe/omnia-tinymce npm version (package.json + lockfile)
 │   └── static/                 # Built JS/CSS artifacts served via ++plone++imio.omnia.tinymce
 │       ├── omnia-tinymce.js    # ESM TinyMCE plugin (copied from the pinned npm package's dist/)
@@ -43,7 +42,7 @@ src/imio/omnia/tinymce/
 
 The TinyMCE plugin is published as the npm package `@imiobe/omnia-tinymce`. `browser/npm/package.json` pins the version consumed by this add-on; built artifacts (`dist/omnia-tinymce.umd.cjs` and `dist/omnia-tinymce.css`) are copied from that package into `browser/static/`, which is committed to the repo.
 
-The source also lives at `browser/resources/` as a **git submodule** pointing to `gitlab.imio.be:ia/omnia-tinymce`, but it is only for local development/testing of JS changes before they're published to npm — it is **not** used to produce the shipped artifacts.
+The JS source lives in its own project, `gitlab.imio.be:ia/omnia-tinymce`, not in this repository. To test JS changes before they are published to npm, clone that project separately.
 
 ### Updating the JS bundle
 

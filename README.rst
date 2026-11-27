@@ -140,22 +140,17 @@ bundle.
 Frontend development
 ====================
 
-The TinyMCE plugin source lives in ``browser/resources/`` as a **git
-submodule** (``ia/omnia-tinymce``). Built artifacts are committed to
-``browser/static/``.
+The TinyMCE plugin is developed in its own project (``ia/omnia-tinymce`` on
+iMio's GitLab) and published as the npm package ``@imiobe/omnia-tinymce``.
+``browser/npm/package.json`` pins the version used here. Its built files are
+copied to ``browser/static/``, which is committed::
 
-Rebuild after JS changes::
-
-    make build-js          # npm ci + vite build + copy to static/
+    make update-js         # npm install + copy dist/ to static/
     make clean-js          # remove built artifacts
 
-Run the Storybook dev environment::
-
-    make dev               # Storybook on http://localhost:6006
-
-The frontend stack uses **Vite** (library mode), **Preact**, **Tailwind CSS
-v4** (``om:`` prefix, scoped to ``[data-omnia]``), and **Motion** for drag /
-resize.
+To use a newer version, change it in ``browser/npm/package.json``, run
+``make update-js``, then commit ``package.json``, ``package-lock.json`` and
+the two files in ``static/``.
 
 
 Translations
