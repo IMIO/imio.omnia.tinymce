@@ -25,7 +25,8 @@ Expand text           d     Make the selected text longer
 Improve text          a     Enhance style and quality
 Reduce text           r     Shorten the selected text
 Correct text          c     Fix spelling and grammar
-Make accessible       x     Simplify for WCAG / easy-read compliance
+Structure text        s     Fix headings and turn enumerations into lists (accessibility)
+Simplify text         l     Short sentences, one idea per sentence (easier to read)
 Translate text        t     Translate to a target language
 Generate (*)          g     Create new content from a free-text prompt (side panel)
 ====================  ====  ===========================================================
