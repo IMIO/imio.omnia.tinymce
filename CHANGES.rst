@@ -11,7 +11,7 @@ Changelog
   in the enabled features of existing sites.
   [thomlamb]
 
-- Bump the bundled ``@imiobe/omnia-tinymce`` npm package to 0.4.0.
+- Bump the bundled ``@imiobe/omnia-tinymce`` npm package to 0.4.1.
   [thomlamb]
 
 
